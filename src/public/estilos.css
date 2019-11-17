@@ -1,0 +1,17 @@
+.deslizantes{
+    background: #000000;
+    width: 1000px;
+    height: 600px;
+    align-self: center;
+}
+
+.titulo{
+    color: aquamarine;
+    font: 800;
+    align-content: center;
+}
+.subtitulo{
+    color: blueviolet;
+    font: bold;
+    align-content: flex-end;
+}

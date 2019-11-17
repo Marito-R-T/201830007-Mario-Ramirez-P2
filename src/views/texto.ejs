@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include reuso/head.html %>
+    <title>Archivo</title>
+  </head>
+  <body class="bg-dark">
+    <% include reuso/navegador.html %>
+    <br />
+    <div class="container" style="text-align: center; color: azure;">
+      <h2>Ingrese archivo TXT</h2>
+    </div>
+    <br />
+    <div class="container">
+      <div class="input-group mb-3">
+        <form action="/automata" method="post">
+        <div class="input-group-prepend">
+          <button
+            class="btn btn-outline-secondary"
+            type="submit"
+            id="verificar"
+          >
+            Aceptar
+          </button>
+        </div>
+        <input  class="invisible" type="text" id="txt" name="txt">
+      </form>
+      </div>
+      <div class="custom-file">
+        <input
+          type="file"
+          class="custom-file-input btn-outline-warning"
+          id="textotxt"
+          name="archivo"
+          onchange="processFiles(this.files)"
+          accept="text/plain"
+        />
+        <label class="custom-file-label" for="verificar"
+          >Escoja un txt</label>
+        <div class="container-fluid" id="fileOutput" style="background: bisque;"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <% include reuso/footer.html %>
+    </footer>
+    <script src="/archivo.js"></script>
+    <% include reuso/scripts.html %>
+  </body>
+</html>

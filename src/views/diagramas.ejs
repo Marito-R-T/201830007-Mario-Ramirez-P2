@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include reuso/head.html %>
+    <title>Analizador</title>
+  </head>
+  <body class="bg-dark align-content-center ">
+    <% include reuso/navegador.html%>
+    <br>
+    <div class="deslizantes container">
+      <div id="carouselDiagramas" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner deslizantes">
+          <div class="carousel-item active deslizantes">
+            <img
+              src="imagenes/Diagrama D_F.jpg"
+              class="d-block w-100 deslizantes"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Diagrama ID.jpg" class="d-block w-100 deslizantes" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Transiciones.png" class="d-block w-100 deslizantes" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Alfabeto.png" class="d-block w-100 deslizantes" alt="..." />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselDiagramas"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselDiagramas"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Proximo</span>
+        </a>
+      </div>
+    </div>
+    <% include reuso/scripts.html %>
+  </body>
+</html>

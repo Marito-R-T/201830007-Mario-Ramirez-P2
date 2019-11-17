@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include reuso/head.html %>
+    <title>Analizador</title>
+  </head>
+  <body class="bg-dark text-white">
+    <% include reuso/navegador.html%> 
+    <br />
+    <div class="container-fluid">
+      <input type="hidden" id="tipo" />
+      <input type="hidden" id="palabra" />> <input type="hidden" id="numero" />>
+      <div class="form-row">
+        <div class="form-group col-md-10">
+          <a class="btn btn-outline-warning btn-lg btn-block" id="siguiente"
+            >Siguiente</a
+          >
+        </div>
+      </div>
+      <br />
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <button
+            class="btn btn-outline-secondary btn-block"
+            type="button"
+            data-toggle="collapse"
+            data-target="#listareservadac"
+            aria-expanded="false"
+            aria-controls="listareservadac"
+          >
+            Reservadas
+          </button>
+          <div class="collapse" id="listareservadac">
+            <div class="card card-body" id="listareservada"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listabooleanoc"
+              aria-expanded="false"
+              aria-controls="listabooleanoc"
+            >
+              Boolean
+            </button>
+          </p>
+          <div class="collapse" id="listabooleanoc">
+            <div class="card card-body" id="listabooleano"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaoperadorc"
+              aria-expanded="false"
+              aria-controls="listaoperadorc"
+            >
+              Operadores
+            </button>
+          </p>
+          <div class="collapse" id="listaoperadorc">
+            <div class="card card-body" id="listaoperador"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaagrupacionc"
+              aria-expanded="false"
+              aria-controls="listaagrupacionc"
+            >
+              Agrupaciones
+            </button>
+          </p>
+          <div class="collapse" id="listaagrupacionc">
+            <div class="card card-body" id="listaagrupacion"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listasignoc"
+              aria-expanded="false"
+              aria-controls="listasignoc"
+            >
+              Signos
+            </button>
+          </p>
+          <div class="collapse" id="listasignoc">
+            <div class="card card-body" id="listasigno"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaenteroc"
+              aria-expanded="false"
+              aria-controls="listaenteroc"
+            >
+              Enteros
+            </button>
+          </p>
+          <div class="collapse" id="listaenteroc">
+            <div class="card card-body" id="listaentero"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaflotantec"
+              aria-expanded="false"
+              aria-controls="listaflotantec"
+            >
+              Flotante
+            </button>
+          </p>
+          <div class="collapse" id="listaflotantec">
+            <div class="card card-body" id="listaflotante"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaidc"
+              aria-expanded="false"
+              aria-controls="listaidc"
+            >
+              ID
+            </button>
+          </p>
+          <div class="collapse" id="listaidc">
+            <div class="card card-body" id="listaid"></div>
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <p>
+            <button
+              class="btn btn-outline-secondary btn-block"
+              type="button"
+              data-toggle="collapse"
+              data-target="#listaerrorc"
+              aria-expanded="false"
+              aria-controls="listaerrorc"
+            >
+              Errores
+            </button>
+          </p>
+          <div class="collapse" id="listaerrorc">
+            <div class="card card-body" id="listaerror"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <% include reuso/footer.html %>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/axios.js"></script>
+    <script src="/listado.js" id="script"></script>
+    <% include reuso/scripts.html %>
+  </body>
+</html>

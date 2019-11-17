@@ -1,0 +1,30 @@
+{
+  "name": "automata",
+  "version": "0.0.1",
+  "description": "Automata, Analizador lexico",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src",
+    "start": "node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marito-R-T/Automata.git"
+  },
+  "author": "Mario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marito-R-T/Automata/issues"
+  },
+  "homepage": "https://github.com/Marito-R-T/Automata#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "nodemon": "^1.19.3"
+  }
+}
